@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title_name %}{% endblock title_name %}</title>
+    
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{% block header_title %}Welcome to My Blog{% endblock header_title %}</h1>
+        <p>{% block header_subtitle %}Sharing ideas, stories, and code{% endblock header_subtitle%}</p>
+    </header>
+
+    <main>
+        {% block body_part %}{% endblock body_part%}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

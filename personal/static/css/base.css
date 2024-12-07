@@ -1,0 +1,109 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Good readability for blog content */
+    background-color: #f5f5f5;     /* Soft background color */
+    color: #333;                   /* Dark text for easy reading */
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Styling the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Main content area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #444;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling lists */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}

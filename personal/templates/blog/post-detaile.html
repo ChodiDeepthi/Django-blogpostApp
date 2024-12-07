@@ -1,0 +1,31 @@
+{% extends "basestruct.html" %}
+{% load static %}
+{% block title_name %}post title{% endblock title_name %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "css/post-detaile.css" %}">
+
+
+{% endblock css_files %}
+{% block content %}
+
+<section id="summary">
+    <h2>Post title</h2>
+    <article>
+        <img src="{% static post.image %}" alt="{{post.title}}" />
+        <address>By Deepthi</address>
+    </article>
+    <div>Last updated on <time>{{post.date}}</time>
+    </div>
+
+</section>
+
+<main>
+    <p>
+    {{post.content}}    
+    </p>
+
+
+</main>
+
+{% endblock content%}

@@ -1,0 +1,36 @@
+
+{% extends "basestruct.html" %}
+{% load static %}
+{% block title_name %}Myblog{% endblock title_name %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "css/base2.css" %}">
+<link rel="stylesheet" href="{% static "css/posts.css" %}">
+
+{% endblock css_files %}
+{% block content %}
+
+
+<section id="welcome">
+
+    <header>
+        <img src="{% static "images\1728402626203.jfif" %}" alt="deepu"/>
+        <h2>deepthi's BLOG</h2>
+    </header>
+    <p>hi , I am Deepthi and i l love to blog about tech and world!
+    </p>
+</section>
+<section id="latest-posts">
+    <h2>my latest posts</h2>
+    <ul>
+        {% for post in posts%}
+       {% include "includes/post.html" %}
+       
+      {% endfor %}
+</section>
+<section id="about">
+<h2>what i do </h2>
+<p>i love work ,i love to do exercises and i enjoying exploring new technologies in general!</p>
+<p>My goal is to keep growing as a developer - and if i could help you do the same !!!
+</section>
+{% endblock content %}
